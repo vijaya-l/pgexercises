@@ -17,3 +17,11 @@ WHERE
     membercost > 0
     AND (membercost < monthlymaintenance / 50.0);
 
+-- How can you produce a list of all facilities with the word 'Tennis' in their name?
+SELECT
+    *
+FROM
+    cd.facilities
+WHERE
+    name LIKE '%Tennis%';
+
